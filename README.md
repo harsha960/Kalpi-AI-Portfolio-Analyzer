@@ -327,30 +327,6 @@ routing (rules + mocked LLM), the tool wrappers, and the FastAPI routes.
 - **Not financial advice:** this is an educational prototype. Outputs are informational
   and must not be used as the basis for investment decisions.
 
-## 20. Loom walkthrough script (3–5 min)
-
-1. **Intro (20s).** "Kalpi AI Portfolio Analyzer — a conversational portfolio advisor.
-   Pure Python, FastAPI + Streamlit. The key idea: the LLM only routes intent; all
-   numbers come from deterministic, tested Python tools."
-2. **Load a portfolio (30s).** Click **Load sample** (or paste `Ticker,Weight`). Show
-   the parsed table and the **smart prompts** that appear based on the portfolio.
-3. **Summary (20s).** Ask *"Summarize my portfolio."* — note it answers instantly
-   (no market-data call) with holdings, largest position, top-3, and top sector.
-4. **Performance (40s).** Ask *"How has my portfolio performed versus the Nifty 50?"* —
-   show the cumulative-return chart, Sharpe/return/volatility cards, and benchmark
-   comparison. Mention the detected intent / method caption.
-5. **Risk (30s).** Ask *"What is my risk — volatility, drawdown and VaR?"* — the canvas
-   swaps to the drawdown chart and risk cards.
-6. **Diversification & correlation (30s).** Ask *"Am I over-concentrated in any sector?"*
-   then *"Show me the correlation matrix."* — sector pie, concentration, heatmap.
-7. **What-if mid-chat (40s).** Ask *"What if I exit my largest position and move it to
-   gold?"* — show before/after allocation. Then *"reduce TCS by 10% and add it to
-   HDFCBANK"* — show it asks for confirmation instead of guessing.
-8. **The Golden Rule (20s).** Briefly show `backend/agent/` vs `backend/core/`: the
-   agent classifies intent; the core computes every metric. Run `pytest -q` to show
-   the deterministic functions are tested.
-9. **Wrap (10s).** Recap: conversational, adaptive canvas, deterministic and testable.
-
 ---
 
-*Built for the Kalpi Capital Engineering & Product assignment. Not financial advice.*
+*Not financial advice.*
