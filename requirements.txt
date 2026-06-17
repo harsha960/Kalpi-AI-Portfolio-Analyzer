@@ -1,0 +1,30 @@
+# ---- Kalpi AI Portfolio Analyzer · dependencies ----
+
+# Backend (API)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9      # file uploads (CSV/Excel) via FastAPI
+pydantic>=2.7
+
+# Frontend (UI)
+streamlit>=1.33
+
+# Numerics & financial math (deterministic core)
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13                  # parametric VaR (norm.ppf), stats helpers
+
+# Market data
+yfinance>=0.2.40            # NSE/Nifty data (tickers use the .NS suffix)
+openpyxl>=3.1               # read .xlsx portfolio uploads
+requests>=2.31
+
+# Charts (dynamic canvas)
+plotly>=5.22
+
+# Agent layer (LLM intent classification; rule-based fallback if no key)
+openai>=1.30
+
+# Config & tooling
+python-dotenv>=1.0
+pytest>=8.2                 # unit tests for the metric functions
