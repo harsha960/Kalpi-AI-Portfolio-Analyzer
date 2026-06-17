@@ -146,7 +146,7 @@ Requires Python 3.10+.
 
 ```bash
 # from the project root
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
+python3 -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env          # optional — the app runs without any API key
 ```
